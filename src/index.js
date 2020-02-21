@@ -15,5 +15,6 @@ window.addEventListener("DOMContentLoaded", function(event) {
     return response.json();
   }).then(function(json) {
     console.log(json);
+    const ul = document.getElementById("dog-breeds")
   });
 });
