@@ -46,9 +46,8 @@ window.addEventListener("DOMContentLoaded", function(event)
     }
     for (let i = 0; dropdown.options.length; i++)
     {
-      const option = dropdown.options[i];
       const ul = document.getElementById("dog-breeds");
-      if (option.selected === true)
+      if (dropdown.options[i].selected === true)
       {
         for (let i = 0; i < breeds.length; i++)
         {
