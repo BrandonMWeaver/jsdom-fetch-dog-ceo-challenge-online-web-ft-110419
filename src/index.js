@@ -16,6 +16,7 @@ window.addEventListener("DOMContentLoaded", function(event)
       document.body.append(img);
     }
   });
+  
   const fetchBreeds = window.fetch("https://dog.ceo/api/breeds/list/all").then(function(response)
   {
     return response.json();
