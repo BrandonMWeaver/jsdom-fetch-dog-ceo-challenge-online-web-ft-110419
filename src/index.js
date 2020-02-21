@@ -56,7 +56,7 @@ window.addEventListener("DOMContentLoaded", function(event)
           if (breed[0] == option)
           {
             const li = document.createElement("li");
-            li.innerText = property;
+            li.innerText = breed;
             li.style.cursor = "pointer";
             li.addEventListener("click", function()
             {
