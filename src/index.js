@@ -47,21 +47,18 @@ window.addEventListener("DOMContentLoaded", function(event)
     for (let i = 0; event.target.options.length; i++)
     {
       const ul = document.getElementById("dog-breeds");
-      if (event.target.options[i].selected === true)
+      for (let i = 0; i < breeds.length; i++)
       {
-        for (let i = 0; i < breeds.length; i++)
+        if (breeds[i].startsWith(event.target.value))
         {
-          if (breeds[i].startsWith(event.target.value))
+          const li = document.createElement("li");
+          li.innerText = breeds[i];
+          li.style.cursor = "pointer";
+          li.addEventListener("click", function()
           {
-            const li = document.createElement("li");
-            li.innerText = breeds[i];
-            li.style.cursor = "pointer";
-            li.addEventListener("click", function()
-            {
-              li.style.color = "pink";
-            });
-            ul.append(li);
-          }
+            li.style.color = "pink";
+          });
+          ul.append(li);
         }
       }
     }
