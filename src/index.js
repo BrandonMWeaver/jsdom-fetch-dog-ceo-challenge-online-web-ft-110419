@@ -4,9 +4,9 @@ window.addEventListener("DOMContentLoaded", function(event) {
   window.fetch("https://dog.ceo/api/breeds/image/random/4").then(function(response) {
     return response.json();
   }).then(function(json) {
-    for (let i = 0; i < json["message"].length; i++)
+    for (let i = 0; i < json.message.length; i++)
     {
-      console.log(json["message"][i]);
+      console.log(json.message[i]);
     }
   });
 });
