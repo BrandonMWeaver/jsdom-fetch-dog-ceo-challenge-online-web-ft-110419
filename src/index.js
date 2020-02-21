@@ -41,7 +41,10 @@ window.addEventListener("DOMContentLoaded", function(event)
     {
       allLi[i].remove();
     }
-    for dropdown.options
+    for (let i = 0; dropdown.options.length; i++)
+    {
+      
+    }
     ul.removeChild();
   });
 });
