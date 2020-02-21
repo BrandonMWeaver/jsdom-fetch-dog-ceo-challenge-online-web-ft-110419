@@ -11,4 +11,7 @@ window.addEventListener("DOMContentLoaded", function(event) {
       document.body.append(img);
     }
   });
+  window.fetch("https://dog.ceo/api/breeds/list/all").then(function(event) {
+    
+  });
 });
