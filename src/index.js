@@ -51,7 +51,7 @@ window.addEventListener("DOMContentLoaded", function(event)
       {
         for (let i = 0; i < breeds.length; i++)
         {
-          if (breeds[i][0] == option)
+          if (breeds[i][0] == dropdown.options[i])
           {
             const li = document.createElement("li");
             li.innerText = breed;
