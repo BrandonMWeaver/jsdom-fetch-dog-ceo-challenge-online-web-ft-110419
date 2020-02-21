@@ -44,6 +44,7 @@ window.addEventListener("DOMContentLoaded", function(event)
     {
       allLi[i].remove();
     }
+    console.log(dropdown.options.length);
     for (let i = 0; dropdown.options.length; i++)
     {
       const option = dropdown.options[i];
