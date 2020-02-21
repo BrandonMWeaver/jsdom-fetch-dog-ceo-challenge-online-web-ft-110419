@@ -24,6 +24,7 @@ window.addEventListener("DOMContentLoaded", function(event)
     {
       const li = document.createElement("li");
       li.innerText = property;
+      li.cursor = pointer;
       ul.append(li);
     }
   });
