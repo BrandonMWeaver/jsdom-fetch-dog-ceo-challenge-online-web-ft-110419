@@ -1,3 +1,5 @@
-console.log('%c HI', 'color: firebrick')
+console.log('%c HI', 'color: firebrick');
 
-window.addEventListener("DOMContentLoaded")
+window.addEventListener("DOMContentLoaded", function(event) {
+  
+});
