@@ -33,6 +33,7 @@ window.addEventListener("DOMContentLoaded", function(event)
     }
   });
   const dropdown = document.getElementById("breed-dropdown");
+  console.log(dropdown);
   dropdown.addEventListener("onchange", function()
   {
     const ul = document.getElementById("dog-breeds");
