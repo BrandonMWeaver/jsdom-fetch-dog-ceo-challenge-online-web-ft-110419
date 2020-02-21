@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", function(event)
   dropdown.addEventListener("change", function()
   {
     const ul = document.getElementById("dog-breeds");
-    document.removeChildren(ul);
+    removeChildren(ul);
     for (let i = 0; dropdown.options.length; i++)
     {
       const ul = document.getElementById("dog-breeds");
