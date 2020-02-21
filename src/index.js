@@ -25,14 +25,21 @@ window.addEventListener("DOMContentLoaded", function(event)
       const li = document.createElement("li");
       li.innerText = property;
       li.style.cursor = "pointer";
-      li.addEventListener("click", function() {
+      li.addEventListener("click", function()
+      {
         li.style.color = "pink";
       });
       ul.append(li);
     }
   });
-  document.getElementById("breed-dropdown").addEventListener("onchange", function() {
+  document.getElementById("breed-dropdown").addEventListener("onchange", function()
+  {
     const ul = document.getElementById("dog-breeds");
+    const allLi = document.querySelectorAll("li");
+    for (let i = 0; i < allLi.length; i++)
+    {
+      allLi[i].remove();
+    }
     ul.removeChild();
   });
 });
