@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded", function(event)
           if (breeds[i][0] == dropdown.options[i].value)
           {
             const li = document.createElement("li");
-            li.innerText = breed;
+            li.innerText = breeds[i];
             li.style.cursor = "pointer";
             li.addEventListener("click", function()
             {
