@@ -31,5 +31,5 @@ window.addEventListener("DOMContentLoaded", function(event)
       ul.append(li);
     }
   });
-  document.getElementById("breed-dropdown").addEventListener("")
+  document.getElementById("breed-dropdown").addEventListener("onchange")
 });
