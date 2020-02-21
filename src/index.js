@@ -26,9 +26,7 @@ window.addEventListener("DOMContentLoaded", function(event)
       for (let j = 0; j < json.message[i].length; j++)
       {
         const li = document.createElement("li");
-        const p = document.createElement("p");
-        p.innerText = json.message[i][j];
-        li.append(p);
+        li.innerText = json.message[i][j];
         ul.append(li);
       }
     }
