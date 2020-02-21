@@ -63,7 +63,6 @@ window.addEventListener("DOMContentLoaded", function(event)
             ul.append(li);
           }
         }
-      }
     }
   });
 });
