@@ -33,6 +33,6 @@ window.addEventListener("DOMContentLoaded", function(event)
     }
   });
   document.getElementById("breed-dropdown").addEventListener("onchange", function() {
-    ul.remo
+    ul.removeChild();
   });
 });
