@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function(event)
       document.body.append(img);
     }
   });
-  window.fetch("https://dog.ceo/api/breeds/list/all").then(function(response)
+  const fetchBreeds = window.fetch("https://dog.ceo/api/breeds/list/all").then(function(response)
   {
     return response.json();
   }).then(function(json)
@@ -32,7 +32,8 @@ window.addEventListener("DOMContentLoaded", function(event)
       ul.append(li);
     }
   });
-  document.getElementById("breed-dropdown").addEventListener("onchange", function()
+  const dropdown = document.getElementById("breed-dropdown");
+  dropdown.addEventListener("onchange", function()
   {
     const ul = document.getElementById("dog-breeds");
     const allLi = document.querySelectorAll("li");
@@ -40,6 +41,7 @@ window.addEventListener("DOMContentLoaded", function(event)
     {
       allLi[i].remove();
     }
+    console.log(dropdown.value)
     ul.removeChild();
   });
 });
