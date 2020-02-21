@@ -50,9 +50,9 @@ window.addEventListener("DOMContentLoaded", function(event)
       const ul = document.getElementById("dog-breeds");
       if (option.selected === true)
       {
-        for (const breed in breeds)
+        for (let i = 0; i < breeds.length; i++)
         {
-          if (breed[0] == option)
+          if (breeds[i][0] == option)
           {
             const li = document.createElement("li");
             li.innerText = breed;
