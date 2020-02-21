@@ -1,6 +1,6 @@
 console.log('%c HI', 'color: firebrick');
 
-const breeds = [];
+let breeds = [];
 
 window.addEventListener("DOMContentLoaded", function(event)
 {
