@@ -23,7 +23,9 @@ window.addEventListener("DOMContentLoaded", function(event)
     const ul = document.getElementById("dog-breeds");
     for (let i = 0; i < json.message.length; i++)
     {
-      ul.append(json.message[i]);
+      const li = document.createElement("li");
+      li.append(json.message[i]);
+      ul.append(li);
     }
   });
 });
