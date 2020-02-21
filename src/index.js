@@ -25,10 +25,12 @@ window.addEventListener("DOMContentLoaded", function(event)
       const li = document.createElement("li");
       li.innerText = property;
       li.style.cursor = "pointer";
-      li.addEventListener("click", function() {
-        li.style.color = "pink";
-      });
+      li.addEventListener("click", changeColor);
       ul.append(li);
     }
   });
+  
+  function changeColor(element) {
+    element.style.color = "pink";
+  }
 });
