@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", function(event)
     {
       allLi[i].remove();
     }
-    for (let i = 0; dropdown.options.length; i++)
+    for (let i = 0; event.target.options.length; i++)
     {
       const ul = document.getElementById("dog-breeds");
       if (dropdown.options[i].selected === true)
