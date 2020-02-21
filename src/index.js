@@ -33,7 +33,6 @@ window.addEventListener("DOMContentLoaded", function(event)
     }
   });
   const dropdown = document.getElementById("breed-dropdown");
-  console.log(dropdown);
   dropdown.addEventListener("onchange", function()
   {
     const ul = document.getElementById("dog-breeds");
@@ -42,7 +41,7 @@ window.addEventListener("DOMContentLoaded", function(event)
     {
       allLi[i].remove();
     }
-    console.log(dropdown);
+    for dropdown.options
     ul.removeChild();
   });
 });
