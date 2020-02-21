@@ -1,5 +1,7 @@
 console.log('%c HI', 'color: firebrick');
 
+const breeds = [];
+
 window.addEventListener("DOMContentLoaded", function(event)
 {
   window.fetch("https://dog.ceo/api/breeds/image/random/4").then(function(response)
@@ -21,6 +23,7 @@ window.addEventListener("DOMContentLoaded", function(event)
   {
     for (const property in json.message)
     {
+      breeds.push(property);
       const ul = document.getElementById("dog-breeds");
       const li = document.createElement("li");
       li.innerText = property;
