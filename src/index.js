@@ -52,7 +52,6 @@ window.addEventListener("DOMContentLoaded", function(event)
       {
         for (const breed in breeds)
         {
-          console.log(breed);
           if (breed[0] == option)
           {
             const li = document.createElement("li");
