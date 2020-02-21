@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", function(event)
     }
   });
   const dropdown = document.getElementById("breed-dropdown");
-  dropdown.addEventListener("onchange", function()
+  dropdown.addEventListener("change", function()
   {
     const ul = document.getElementById("dog-breeds");
     const allLi = document.querySelectorAll("li");
