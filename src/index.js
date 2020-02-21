@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function(event)
   {
     console.log(json);
     const ul = document.getElementById("dog-breeds");
-    for (let i = 0; i < json.message.keys.length; i++)
+    for (let i = 0; i < json.message.length; i++)
     {
       console.log(json.message.keys[i]);
     }
