@@ -45,24 +45,19 @@ window.addEventListener("DOMContentLoaded", function(event)
     {
       allLi[i].remove();
     }
-    for (let i = 0; event.target.options.length; i++)
+    for (let i = 0; i < breeds.length; i++)
     {
-      if (event.target.options[i].selected == true)
+      if (breeds[i].startsWith(event.target.value))
       {
-        for (let i = 0; i < breeds.length; i++)
+        const li = document.createElement("li");
+        li.innerText = breeds[i];
+        li.style.cursor = "pointer";
+        li.addEventListener("click", function()
         {
-          if (breeds[i].startsWith(event.target.value))
-          {
-            const li = document.createElement("li");
-            li.innerText = breeds[i];
-            li.style.cursor = "pointer";
-            li.addEventListener("click", function()
-            {
-              li.style.color = "pink";
-            });
-            ul.append(li);
-          }
-        }
+          li.style.color = "pink";
+        });
+        ul.append(li);
+      }
     }
   });
 });
