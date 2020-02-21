@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", function(event)
     }
   });
   const dropdown = document.getElementById("breed-dropdown");
-  dropdown.addEventListener("change", function()
+  dropdown.addEventListener("change", function(event)
   {
     const ul = document.getElementById("dog-breeds");
     const allLi = document.querySelectorAll("li");
@@ -51,7 +51,7 @@ window.addEventListener("DOMContentLoaded", function(event)
       {
         for (let i = 0; i < breeds.length; i++)
         {
-          if (breeds[i].startsWith(dropdown.options[i].innerText))
+          if (breeds[i].startsWith(event.target.value))
           {
             const li = document.createElement("li");
             li.innerText = breeds[i];
