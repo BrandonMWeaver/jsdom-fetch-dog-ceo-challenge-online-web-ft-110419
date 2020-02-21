@@ -6,7 +6,8 @@ window.addEventListener("DOMContentLoaded", function(event) {
   }).then(function(json) {
     for (let i = 0; i < json.message.length; i++)
     {
-      console.log(json.message[i]);
+      const img = document.createElement("img");
+      img.src = json.message[i];
     }
   });
 });
