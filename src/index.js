@@ -19,11 +19,10 @@ window.addEventListener("DOMContentLoaded", function(event)
     return response.json();
   }).then(function(json)
   {
-    console.log(json.message.length);
     const ul = document.getElementById("dog-breeds");
-    for (let i = 0; i < json.message.length; i++)
+    for (const property in json.message)
     {
-      console.log(json.message[i]);
+      console.log(property);
     }
   });
 });
