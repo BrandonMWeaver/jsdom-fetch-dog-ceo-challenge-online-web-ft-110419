@@ -44,13 +44,26 @@ window.addEventListener("DOMContentLoaded", function(event)
     {
       allLi[i].remove();
     }
-    console.log(dropdown.options.length);
     for (let i = 0; dropdown.options.length; i++)
     {
       const option = dropdown.options[i];
+      const ul = document.getElementById("dog-breeds");
       if (option.selected === true)
       {
-        console.log(option.value);
+        for (const breed in breeds)
+        {
+          if (breed[0] == option)
+          {
+            const li = document.createElement("li");
+            li.innerText = property;
+            li.style.cursor = "pointer";
+            li.addEventListener("click", function()
+            {
+              li.style.color = "pink";
+            });
+            ul.append(li);
+          }
+        }
       }
     }
     ul.removeChild();
