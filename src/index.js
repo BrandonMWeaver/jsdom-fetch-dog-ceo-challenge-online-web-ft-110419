@@ -45,6 +45,9 @@ window.addEventListener("DOMContentLoaded", function(event)
     {
       const option = dropdown.options[i];
       if (option.selected)
+      {
+        console.log(option.value);
+      }
     }
     ul.removeChild();
   });
