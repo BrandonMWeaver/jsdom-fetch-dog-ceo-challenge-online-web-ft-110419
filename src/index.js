@@ -1,5 +1,7 @@
 console.log('%c HI', 'color: firebrick');
 
+const ul = document.getElementById("dog-breeds");
+
 window.addEventListener("DOMContentLoaded", function(event)
 {
   window.fetch("https://dog.ceo/api/breeds/image/random/4").then(function(response)
@@ -19,7 +21,6 @@ window.addEventListener("DOMContentLoaded", function(event)
     return response.json();
   }).then(function(json)
   {
-    const ul = document.getElementById("dog-breeds");
     for (const property in json.message)
     {
       const li = document.createElement("li");
@@ -31,5 +32,7 @@ window.addEventListener("DOMContentLoaded", function(event)
       ul.append(li);
     }
   });
-  document.getElementById("breed-dropdown").addEventListener("onchange")
+  document.getElementById("breed-dropdown").addEventListener("onchange", function() {
+    ul.remo
+  });
 });
