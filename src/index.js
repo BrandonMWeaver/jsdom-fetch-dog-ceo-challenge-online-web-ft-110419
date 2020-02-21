@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", function(event) {
     {
       const img = document.createElement("img");
       img.src = json.message[i];
+      document.body.append(img);
     }
   });
 });
