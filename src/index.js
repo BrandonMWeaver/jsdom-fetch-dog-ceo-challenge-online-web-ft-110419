@@ -23,10 +23,10 @@ window.addEventListener("DOMContentLoaded", function(event)
   {
     for (const property in json.message)
     {
-      breeds.push(property);
       const ul = document.getElementById("dog-breeds");
       const li = document.createElement("li");
       li.innerText = property;
+      breeds.push(li.innerText);
       li.style.cursor = "pointer";
       li.addEventListener("click", function()
       {
